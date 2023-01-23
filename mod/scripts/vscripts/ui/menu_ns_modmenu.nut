@@ -234,7 +234,7 @@ void function OnModLinkButtonPressed( var button )
 	string link = NSGetModDownloadLinkByModName( modName )
 	if ( link.find("http://") != 0 && link.find("https://") != 0 )
 		link = "http://" + link // links without the http or https protocol get opened in the internal browser
-	LaunchExternalWebBrowser( link, WEBBROWSER_FLAG_FORCEEXTERNAL )
+	LaunchExternalWebBrowser( link, 2 ) // 2: WEBBROWSER_FLAG_FORCEEXTERNAL
 }
 
 void function OnFiltersChange( var n )
