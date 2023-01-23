@@ -384,7 +384,7 @@ resource/ui/menus/modlist.menu
 			xpos		-15
 			ypos		-15
 
-			labelText	"#REVERSE"
+			labelText	"#ORDER"
 			ConVar		"modlist_reverse"
 			wide 260
 
