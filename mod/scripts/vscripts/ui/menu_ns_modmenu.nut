@@ -223,10 +223,10 @@ void function OnReloadModsButtonPressed( var button )
 	ReloadMods()
 }
 
-void function OnAuthenticationAgreementButtonPressed( var button )
-{
-	NorthstarMasterServerAuthDialog()
-}
+// void function OnAuthenticationAgreementButtonPressed( var button )
+// {
+// 	NorthstarMasterServerAuthDialog()
+// }
 
 void function OnModLinkButtonPressed( var button )
 {
