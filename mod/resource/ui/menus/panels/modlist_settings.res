@@ -6,7 +6,7 @@ resource/ui/menus/panels/modlist_setting.res
 		InheritProperties 		RuiSmallButton
 		classname 				ModButton
 		labelText				"please show up"
-		
+
 		pin_to_sibling			ControlBox
 		pin_corner_to_sibling 	LEFT
 		pin_to_sibling_corner 	RIGHT
@@ -16,6 +16,7 @@ resource/ui/menus/panels/modlist_setting.res
 	{
 		ControlName	Label
 		wide		400
+		tall        30
 		labelText	"labelText"
 
 		pin_to_sibling			ControlBox
