@@ -505,13 +505,13 @@ string function FormatModDescription( string modName )
 	ret += format( "%s %s\n", Localize( "#VERSION" ), NSGetModVersionByModName( modName ) )
 
 	// load priority
-	ret += format( "%s%i\n", Localize( "#LOAD_PRIORITY" ), NSGetModLoadPriority( modName ) )
+	ret += format( "%s %i\n", Localize( "#LOAD_PRIORITY" ), NSGetModLoadPriority( modName ) )
 
 	// convars
 	array<string> modCvars = NSGetModConvarsByModName( modName )
 	if ( modCvars.len() != 0 && GetConVarBool( "modlist_show_convars" ) )
 	{
-		ret += "ConVars: "
+		ret += Localize( "#CONVARS" ) + ": "
 
 		for ( int i = 0; i < modCvars.len(); i++ )
 		{
