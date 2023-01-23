@@ -1,0 +1,39 @@
+{
+  "Name": "ModManager",
+  "Description": "Mod管理器及其他額外功能",
+  "Version": "1.10.18",
+  "LoadPriority": 0,
+  "ConVars": [
+    {
+      "Name": "filter_mods",
+      "DefaultValue": "0"
+    },
+    {
+      "Name": "modlist_show_convars",
+      "DefaultValue": "0",
+      "Flags": 16777216
+    },
+    {
+      "Name": "modlist_reverse",
+      "DefaultValue": "0",
+      "Flags": 16777216
+    }
+  ],
+  "Scripts": [
+    {
+      "Path": "ui/menu_ns_modmenu.nut",
+      "RunOn": "UI",
+      "UICallback": {
+        "Before": "AddNorthstarModMenu",
+        "After": "AddNorthstarModMenu_MainMenuFooter"
+      }
+    },
+    {
+      "Path": "ui/controller_prompts.nut",
+      "RunOn": "UI"
+    }
+  ],
+  "Localisation": [
+    "resource/modmanager_localisation_%language%.txt"
+  ]
+}
