@@ -413,7 +413,7 @@ void function DisplayModPanels()
 			Hud_SetEnabled( btn, false )
 			Hud_SetVisible( btn, false )
 
-			Hud_SetText( headerLabel, Localize( "#LOAD_PRIORITY" ) + ' ' + mod.name )
+			Hud_SetText( headerLabel, Localize( "#LOAD_PRIORITY" ) + " " + mod.name )
 			Hud_SetVisible( headerLabel, true )
 
 			Hud_SetVisible( box, false )
