@@ -1,6 +1,6 @@
 {
   "Name": "ModManager",
-  "Description": "Mod管理器及其他額外功能",
+  "Description": "Mod manager by FlameRaptor. Credits to NS developers and special thanks to zxcPandora.",
   "Version": "1.10.18",
   "LoadPriority": 0,
   "ConVars": [
