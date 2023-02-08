@@ -515,13 +515,8 @@ string function FormatModDescription( string modName )
 
 		for ( int i = 0; i < modCvars.len(); i++ )
 		{
-			if ( i != modCvars.len() - 1 )
-				ret += format( "\"%s\", ", modCvars[ i ] )
-			else
-				ret += format( "\"%s\"", modCvars[ i ] )
+			ret += format( "\n%s", modCvars[ i ] )
 		}
-
-		ret += "\n"
 	}
 
 	// description
