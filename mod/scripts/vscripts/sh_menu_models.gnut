@@ -213,7 +213,7 @@
 	global function RunMenuClientFunction
 	global function UI_SetPresentationType
 
-	global function UICodeCallback_MouseMovementCapture
+	// global function UICodeCallback_MouseMovementCapture
 #endif // UI
 
 	global const STORE_BG_DEFAULT = 0
@@ -2887,15 +2887,15 @@
 		}
 	}
 
-	void function UICodeCallback_MouseMovementCapture( var capturePanel, int deltaX, int deltaY )
-	{
-		float screenScaleXModifier = 1920.0 / GetScreenSize()[0] // 1920 is base screen width
-		float mouseXRotateDelta = deltaX * screenScaleXModifier * MOUSE_ROTATE_MULTIPLIER
-		//printt( "deltaX:", deltaX, "screenScaleModifier:", screenScaleModifier, "mouseRotateDelta:", mouseRotateDelta )
+	// void function UICodeCallback_MouseMovementCapture( var capturePanel, int deltaX, int deltaY )
+	// {
+	// 	float screenScaleXModifier = 1920.0 / GetScreenSize()[0] // 1920 is base screen width
+	// 	float mouseXRotateDelta = deltaX * screenScaleXModifier * MOUSE_ROTATE_MULTIPLIER
+	// 	//printt( "deltaX:", deltaX, "screenScaleModifier:", screenScaleModifier, "mouseRotateDelta:", mouseRotateDelta )
 
-		float screenScaleYModifier = 1080.0 / GetScreenSize()[1] // 1920 is base screen width
-		float mouseYRotationDelta = deltaY * screenScaleYModifier * MOUSE_ROTATE_MULTIPLIER
+	// 	float screenScaleYModifier = 1080.0 / GetScreenSize()[1] // 1920 is base screen width
+	// 	float mouseYRotationDelta = deltaY * screenScaleYModifier * MOUSE_ROTATE_MULTIPLIER
 
-		RunMenuClientFunction( "UpdateMouseRotateDelta", mouseXRotateDelta, mouseYRotationDelta )
-	}
+	// 	RunMenuClientFunction( "UpdateMouseRotateDelta", mouseXRotateDelta, mouseYRotationDelta )
+	// }
 #endif // UI
