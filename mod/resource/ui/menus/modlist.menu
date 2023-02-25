@@ -342,8 +342,8 @@ resource/ui/menus/modlist.menu
 			editable	1
 			font		Default_21
 
-			allowRightClickMenu		0
-			allowSpecialCharacters	0
+			allowRightClickMenu		1
+			allowSpecialCharacters	1
 			unicode					1
 
 			pin_to_sibling			BtnSearchLabel
