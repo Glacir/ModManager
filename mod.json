@@ -2,6 +2,7 @@
   "Name": "ModManager",
   "Description": "Mod manager by FlameRaptor. Credits to NS developers and special thanks to zxcPandora.",
   "Version": "1.12.6",
+  "DownloadLink": "https://github.com/Glacir/ModManager/releases/latest",
   "LoadPriority": 0,
   "ConVars": [
     {
